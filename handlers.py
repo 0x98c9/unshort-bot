@@ -27,7 +27,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send a help message."""
     await update.message.reply_text(
-        "📌 *How to Use:*\n"
+        "📌 *How to Use:*\n\n"
         "1️⃣ Send me any shortened link (e.g., bit.ly, tinyurl, etc.)\n"
         "2️⃣ I will return the original long link.\n\n"
         "⚠️ *Rate Limit:* 5 requests per minute per user."
@@ -36,7 +36,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Send an about message."""
     await update.message.reply_text(
-        "🤖 *Link Unshortener Bot*\n"
+        "🤖 *Link Unshortener Bot*\n\n"
         "Developed with ❤️ using Python & httpx.\n"
         "This bot helps you reveal the original URL behind shortened links."
     )
